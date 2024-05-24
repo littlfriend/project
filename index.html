@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="spreadsheet" href="styles.css">
+    <style>
+            .button{
+        color: blue;
+        padding: 50px;
+        border: 100px;
+        border-color: aqua;
+     }
+        h1{
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            max-width: 500px;
+            margin : 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 10px;
+        }
+        span + span {
+            margin-right: 10px;
+        }
+        .divider{
+            width:5px;
+            height:auto;
+            display:inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>FAQ</h1>
+    
+    <div class="container">
+        <button class="button" onclick="toggle()">What do pangolins eat?</button>
+        <div id="button1">
+            Pangolins mainly eat insects, usually ants or termites.
+        </div>
+        <div class="divider"></div>
+        <button class="button" onclick="toggle2()">Why do people poach pangolins?</button>
+
+        <div id="button2">
+            They want to sell pangolin scales to black markets. In traditional Chinese Medicine,
+            pangolin scales have medicinal properties, but pangolin scales are actually made of
+            Keratin, which is the same material as your fingernails!
+        </div>
+        <div class="divider"></div>
+        <button class="button" onclick="toggle3()">Where do pangolins live?</button>
+
+        <div id="button3">
+            There are a variety of pangolin species. Pangolins live in Sub-Saharan africa and Southern and Eastern Asia.
+        </div>
+        <script src="./script.js"></script>
+    </div>
+</body>
+</html>
